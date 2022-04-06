@@ -32,6 +32,8 @@ main{
     color:var(--primary-color-light);
     cursor: pointer;
 }
+
+
 #header a{
     text-decoration: none;
 }
@@ -80,6 +82,7 @@ section{
     bottom:-80%;
    right:-35%;
    border-radius: 100%;
+   animation: CircleAnime 2s ease-in-out 0s;
 }
 #left-circle{
     background-color:var(--left-circle);
@@ -88,6 +91,7 @@ section{
     position: absolute;
     left:-10%;
    border-radius: 100%;
+   animation: leftCircleAnime 4s ease-in-out 0s;
 }
 #image-wrapper{
     position: absolute;
@@ -103,13 +107,15 @@ section{
 #info-wrapper{
     position: absolute;
     top:20%;
-    left:10%;
+    left:11.2%;
+    animation: InfoAnime 2s ease-in-out 0s;
 
 }
 #info-wrapper>h1{
     font-size: 4rem;
     color:var(--primary-color-dark);
     line-height: 1.5;
+    animation: animateName 2s ease-in-out 0s;
 }
 #info-wrapper>p {
     font-size: 1rem;
@@ -174,3 +180,54 @@ section{
         opacity: 1;
     }
 }
+
+@keyframes CircleAnime {
+    0% {
+        width: 1px;
+        height: 1px;
+    }
+
+  
+    100% {
+        width:80vw;
+        height: 80vw;
+    }
+}
+@keyframes leftCircleAnime {
+    0% {
+        width: 1px;
+        height: 1px;
+    }
+    50%{
+        width:80vw;
+        height: 80vw;
+    }
+    100% {
+        width:15vw;
+    height: 15vw;
+    }
+
+}
+
+@keyframes InfoAnime {
+    0%{
+        top:-100%;
+    left:-100%;
+
+    }
+   
+    100%{
+        top:20%;
+    left:11.2%;
+    }
+}
+@keyframes animateName{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(359deg);
+    }
+}
+
+
