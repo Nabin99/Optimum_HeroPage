@@ -9,8 +9,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/myWorks.css">
 </head>
-<body>
+<body class="light">
     <header id="header">
         <nav>
             <div> 
@@ -21,6 +22,13 @@
             <a href="./pages/work.html" title="works"><span class="navItem">Works</span></a>
             <a href="./pages/contact.html" title="contacts"><span class="navItem">Contact</span></a>
            </div> 
+           <div class="toggle-wrapper" style="display: flex; align-items: center;">
+               <span>Toggle Theme:</span>
+               <label class="switch">
+         <input id="toggle" type="checkbox" >
+         <span class="slider round"></span>
+       </label></div>
+           
         </nav>
     </header>
     <main>
@@ -41,21 +49,74 @@
                     <button>HIRE ME!</button>
                 </div>
                 <div id="icons">
-                    <a href="https://www.instagram.com/" target="_blank">
+                    <a href="https://www.instagram.com/" title="instagram" target="_blank">
                     <div class="icon1"></div>
                     </a>
-                    <a href="https://dribbble.com/" target="_blank">
+                    <a href="https://dribbble.com/" title="dribble" target="_blank">
                     <div class="icon2"></div>
                     </a>
-                    <a href="https://www.behance.net/" target="_blank">
+                    <a href="https://www.behance.net/" title="behance" target="_blank">
                         <div class="icon3"></div>
                     </a>
                 </div>
             </div>
         </section>
+        <!--   works sections       -->
+        <h2 class="work-sec-heading">MY Works</h2>
+
+        <section title="My Works" id="MY-Works">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                      <h2>Nepal Express</h2>
+                      <div class="image-wrapper">
+                    <img src="./assests/images/nepalEx.png" alt="Avatar">
+                      </div>
+                  </div>
+                  <div class="flip-card-back">
+                    <h1>Nabin Dhital</h1>
+                    <span>Developer/Designer</span> 
+                    <p>Nepal Express an logistics and cargo service......</p> 
+                    <a  href="https://focused-dijkstra-857903.netlify.app/" target="_blank"> Go to Site </a>
+                </div>
+                </div>
+              </div>
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                      <h2>Nepal Express</h2>
+                      <div class="image-wrapper">
+                    <img src="./assests/images/nepalEx.png" alt="Avatar">
+                      </div>
+                  </div>
+                  <div class="flip-card-back">
+                    <h1>Nabin Dhital</h1> 
+                    <p>Nepal Express an logistics and cargo service......</p> 
+                    <a  href="https://focused-dijkstra-857903.netlify.app/" target="_blank"> Go to Site </a>
+                </div>
+                </div>
+              </div>
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                      <h2>Nepal Express</h2>
+                      <div class="image-wrapper">
+                    <img src="./assests/images/nepalEx.png" alt="Avatar">
+                      </div>
+                  </div>
+                  <div class="flip-card-back">
+                    <h1>Nabin Dhital</h1> 
+                    <p>Nepal Express an logistics and cargo service......</p> 
+                    <a  href="https://focused-dijkstra-857903.netlify.app/" target="_blank"> Go to Site </a>
+                </div>
+                </div>
+              </div>
+            
+        </section>
     </main>
     <footer>
 
     </footer>
+    <script src="./js/main.js"></script>
 </body>
 </html>
