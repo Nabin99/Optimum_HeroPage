@@ -111,6 +111,7 @@ section{
     background-repeat: no-repeat;
     background-size: 40vw ;
     background-position: 60% -60%;
+    transition: all 1s ease-in-out;
 }
 #info-wrapper{
     position: absolute;
@@ -162,6 +163,7 @@ section{
     right:20%;
     bottom: 15%;
     height: 120px;
+    transition: all 1s ease-in-out;
 }
 #icons>a>div{
     width:20px;
@@ -248,8 +250,8 @@ section{
 .dark #image-wrapper
 {
     filter:invert(100%) !important;
-    filter: brightness(50%);
-    filter: contrast(50%);
+    filter: brightness(80%);
+    filter: contrast(100%);
 }
 .switch {
     position: relative;

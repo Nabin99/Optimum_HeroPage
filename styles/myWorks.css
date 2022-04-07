@@ -42,6 +42,7 @@
   }
   .image-wrapper>img{
       height: 300px;
+      transition: all 1s ease-in-out;
   }
   
   .flip-card-inner {

@@ -1,0 +1,27 @@
+{
+  "name": "optimum_heropage",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "upload": "surge --project ./ --domain enchanting-temper.surge.sh"
+  },
+  "pre-push": [
+    "upload"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nabin99/Optimum_HeroPage.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nabin99/Optimum_HeroPage/issues"
+  },
+  "homepage": "https://github.com/Nabin99/Optimum_HeroPage#readme",
+  "devDependencies": {
+    "pre-push": "^0.1.2"
+  }
+}
