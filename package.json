@@ -23,5 +23,8 @@
   "homepage": "https://github.com/Nabin99/Optimum_HeroPage#readme",
   "devDependencies": {
     "pre-push": "^0.1.2"
+  },
+  "dependencies": {
+    "git-scripts": "^0.4.3"
   }
 }
