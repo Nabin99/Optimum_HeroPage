@@ -5,11 +5,15 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "upload": "surge --project ./ --domain enchanting-temper.surge.sh"
+    "upload": "surge --project ./ --domain enchanting-temper.surge.sh",
+    "sass" : "sass ./styles/index.scss ./styles/index.css --watch",
+    "dev": "npx concurrently live-server  | npm run sass"
   },
-  "pre-push": [
-    "upload"
-  ],
+  "git": {
+    "scripts": {
+      "pre-push": "surge --project ./ --domain enchanting-temper.surge.sh"
+    }
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Nabin99/Optimum_HeroPage.git"
